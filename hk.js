@@ -24,8 +24,8 @@ function startHotkeys() {
 
 function listenHotkeys(e) {
 
-	if (e.keyCode == e.keyCode) {
-  Lampa.Noty.show(e.keyCode);
+	if (e.keyCode === 406) {
+  Lampa.PlayerVideo.rewind(true,80);
   }
   if (e.keyCode === 427) {
 	openPanel('.player-panel__next.button.selector');
@@ -35,14 +35,7 @@ function listenHotkeys(e) {
 	openPanel('.player-panel__prev.button.selector');
   }
 	
-  if (e.keyCode === 48) {
-    if (!document.querySelector('body.selectbox--open')) {
-	openPanel('.player-panel__subs.button.selector');
-    } else {
-      	history.back();
-    }
-  }
-  if (e.keyCode === 53) {
+  if (e.keyCode === 405) {
     if (!document.querySelector('body.selectbox--open')) {
       	openPanel('.player-panel__playlist.button.selector');
     } else {
