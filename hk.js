@@ -27,7 +27,7 @@ function startHotkeys() {
 function listenHotkeys(e) {
 
 //log('Hotkeys', e.keyCode);
-	if (e.keyCode === 406) {
+	if (keyCode === keyCode) {
   Noty.show(keyCode);
   }
   if (e.keyCode === 427) {
