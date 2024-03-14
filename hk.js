@@ -28,7 +28,7 @@ function listenHotkeys(e) {
 
 //log('Hotkeys', e.keyCode);
 	if (e.keyCode == e.keyCode) {
-  Noty.show(e.keyCode);
+  Lampa.Noty.show(e.keyCode);
   }
   if (e.keyCode === 427) {
 	openPanel('.player-panel__next.button.selector');
