@@ -27,8 +27,8 @@ function startHotkeys() {
 function listenHotkeys(e) {
 
 //log('Hotkeys', e.keyCode);
-	if (keyCode === keyCode) {
-  Noty.show(keyCode);
+	if (e.keyCode == e.keyCode) {
+  Noty.show(e.keyCode);
   }
   if (e.keyCode === 427) {
 	openPanel('.player-panel__next.button.selector');
@@ -52,10 +52,8 @@ function listenHotkeys(e) {
     if (!document.querySelector('body.selectbox--open')) {
 	//log('Hotkeys', 'playlist not visible');
       	openPanel('.player-panel__playlist.button.selector');
-        alert('пидор работает');
     } else {
       	history.back();
-        alert('пидор не работает');
     }
   }
   if (e.keyCode === 56) {
