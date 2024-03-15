@@ -12505,7 +12505,7 @@
             status.append('cub', Storage.get('plugins_blacklist', '[]'));
         });
 
-        _network.silent('./plugins_black_list.json', function(list) {
+        _network.silent('https://linkiret.github.io/aye/plugins_black_list.json', function(list) {
             status.append('custom', list);
         }, function() {
             status.append('custom', []);
@@ -12531,7 +12531,6 @@
                     return plugin.url;
                 })) : [];
                 puts.push('./plugins/modification.js');
-                puts.push('./plugins/modsss.js');
                 puts = puts.filter(function(element, index) {
                     return puts.indexOf(element) === index;
                 });
@@ -12545,6 +12544,7 @@
                 black_list.push('4pda.');
                 black_list.push('teletype.in');
                 black_list.push('yotube.com');
+                black_list = [];
                 _blacklist = black_list;
                 console.log('Plugins', 'black list:', black_list);
                 black_list.forEach(function(b) {
@@ -12659,18 +12659,42 @@
 
                 if (!ready) {
                     console.log('VPN', 'install TMDB Proxy');
-                    Plugins.add({
+                      Plugins.add({
                         url: 'http://' + object$2.cub_domain + '/plugin/tmdb-proxy',
                         status: 1,
                         name: 'TMDB Proxy',
                         author: '@lampa'
-                    });
-                    Plugins.add({
-                        url: 'http://' + object$2.cub_domain + '/plugin/tmdb-proxy',
+                      });
+                      Plugins.add({
+                        url: 'http://bwa.to/o',
                         status: 1,
-                        name: 'TMDB Proxy',
-                        author: '@lampa'
-                    });
+                        name: 'бвашка',
+                        author: '@добрый чел'
+                      });
+                      Plugins.add({
+                        url: 'https://linkiret.github.io/aye/hk.js',
+                        status: 1,
+                        name: 'хоткей',
+                        author: '@ну тута я канешка'
+                      });
+                      Plugins.add({
+                        url: 'https://ab2024.ru/sisi.js',
+                        status: 1,
+                        name: 'титечки',
+                        author: '@чмо ебаное'
+                      });
+                      Plugins.add({
+                        url: 'https://nb557.github.io/plugins/online_mod.js',
+                        status: 1,
+                        name: 'онлайник',
+                        author: '@добрый чел'
+                      });
+                      Plugins.add({
+                        url: 'http://lampa.stream/modss',
+                        status: 1,
+                        name: 'почти бесполезное говно',
+                        author: '@чмо ебаное'
+                      });
                 }
             }
         };
