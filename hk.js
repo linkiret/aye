@@ -6,7 +6,7 @@ function listenDestroy() {
 };
 
 function foca(){
-	Lampa.PlayerPanel.hide();
+	Lampa.PlayerPanel.toggle();
 	clearInterval(aye);
 }
 
