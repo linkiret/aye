@@ -24,17 +24,16 @@ function startHotkeys() {
 
 function listenHotkeys(e) {
 
-	if (e.keyCode === e.keyCode) {
-  Lampa.Noty.show(e.keyCode);
-  }
   if (e.keyCode === 406) {
   Lampa.PlayerVideo.rewind(true,80);
   }
   if (e.keyCode === 427) {
+  	Lampa.Noty.show(e.keyCode);
 	openPanel('.player-panel__next.button.selector');
   }
 
   if (e.keyCode === 428) {
+  	Lampa.Noty.show(e.keyCode);
 	openPanel('.player-panel__prev.button.selector');
   }
 	
