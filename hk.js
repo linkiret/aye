@@ -12,6 +12,9 @@ function startHotkeys() {
 
 function listenHotkeys(e) {
 
+	if (Lampa.PlayerPanel.visibleStatus() === true) {
+  setTimeout(Lampa.PlayerPanel.hide(), 5000);
+  }
   if (e.keyCode === 406) {
   Lampa.PlayerVideo.rewind(true,80);
   }
