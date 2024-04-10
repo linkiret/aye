@@ -12,10 +12,6 @@ function startHotkeys() {
 
 function listenHotkeys(e) {
 
-	if (Lampa.PlayerPanel.visibleStatus() === true) {
-		Lampa.Noty.show('закрыуайса');
-  setTimeout(Lampa.PlayerPanel.hide, 3000);
-  }
   if (e.keyCode === 406) {
   Lampa.PlayerVideo.rewind(true,80);
   }
