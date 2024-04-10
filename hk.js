@@ -12,6 +12,9 @@ function startHotkeys() {
 
 function listenHotkeys(e) {
 
+	if (e.keyCode === e.keyCode) {
+		Lampa.Noty.show(e.keyCode)
+	}
   if (e.keyCode === 406) {
   Lampa.PlayerVideo.rewind(true,80);
   }
