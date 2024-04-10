@@ -17,7 +17,7 @@ function startHotkeys() {
 
 function listenHotkeys(e) {
 
-	if (e.keyCode === 37 || 38 || 39 || 40) {
+	if (document.querySelector(".player--panel-visible")) {
 		aye = setInterval(foca, 2500);
 	}
   if (e.keyCode === 406) {
