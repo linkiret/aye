@@ -6,7 +6,7 @@ function listenDestroy() {
 };
 
 function foca(){
-	document.querySelector('.focus').classList.remove('focus')
+	Lampa.PlayerPanel.hide()
 }
 
 function startHotkeys() {
@@ -17,7 +17,9 @@ function startHotkeys() {
 function listenHotkeys(e) {
 
 	if (e.keyCode === 37 || 38 || 39 || 40) {
-		setInterval(foca, 2500)
+		aye = setInterval(foca, 2500)
+		clearInterval(aye)
+
 	}
   if (e.keyCode === 406) {
   Lampa.PlayerVideo.rewind(true,80);
