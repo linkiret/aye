@@ -16613,6 +16613,7 @@
             },
             down: function down() {
                 PlayerPanel.toggle();
+                setInterval(PlayerPanel.hide, 3000);
             },
             right: function right() {
                 if (PlayerIPTV.playning()) PlayerPanel.toggle();
