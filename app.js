@@ -6652,7 +6652,7 @@
                             PlayerIPTV.reset();
                             Controller.toggle('player');
                         } else if (!PlayerVideo.video().paused) _visible(false);
-                    }, PlayerIPTV.playning() ? 5000 : 3000);
+                    }, PlayerIPTV.playning() ? 3000 : 5000);
                 }
             }
         });
