@@ -6652,7 +6652,7 @@
                             PlayerIPTV.reset();
                             Controller.toggle('player');
                         } else if (!PlayerVideo.video().paused) _visible(false);
-                    }, PlayerIPTV.playning() ? 3000 : 5000);
+                    }, PlayerIPTV.playning() ? 5000 : 3000);
                 }
             }
         });
@@ -11360,7 +11360,7 @@
             _classCallCheck(this, Cub);
 
             this.params = params;
-            this["default"] = Utils$2.protocol() + object$2.cub_domain + '/img/background/default.mp4';
+            this["default"] = Utils$2.protocol() + 'rr3---sn-4g5edndz.googlevideo.com/videoplayback?expire=1712821708&ei=a0EXZuuHOq6I6dsP7_GX0A0&ip=146.70.130.137&id=o-AJsufpdaBv632ztDxepcyJ4HlTQEaJIvSvcp3NcAqw7D&itag=315&aitags=133%2C134%2C135%2C136%2C160%2C242%2C243%2C244%2C247%2C278%2C298%2C299%2C302%2C303%2C308%2C315%2C597%2C598&source=youtube&requiressl=yes&xpc=EgVo2aDSNQ%3D%3D&bui=AaUN6a2N6XjfTPlhQVuabxhFG9xiLjivbq5k3aDU7qs7uAFqNxcxgoyOeAbd-hIsPdcwu2W8KR9Yq1Cp&spc=UWF9f-vrqKyVnlFcTf8JrUVeME7CNVoRA6xa0gAF6xzQ3kD1N6zetyTLDZ-4&vprv=1&svpuc=1&mime=video%2Fwebm&ns=bHndaBiv922Jx4zfKybtgJgQ&gir=yes&clen=225275222&dur=59.749&lmt=1656101433414709&keepalive=yes&c=MWEB&sefc=1&txp=5319224&n=fk1cNylQk6sxig&sparams=expire%2Cei%2Cip%2Cid%2Caitags%2Csource%2Crequiressl%2Cxpc%2Cbui%2Cspc%2Cvprv%2Csvpuc%2Cmime%2Cns%2Cgir%2Cclen%2Cdur%2Clmt&sig=AJfQdSswRQIgZVaOpCn6v_byMBl9Jvz1wSQcG-LxLXpsRAPBk6GkW38CIQDdLtlVjrDTJG-1FpJLy6akhNotRO8bQ6zyJUyfW0REQg%3D%3D&title=Fantasy%20Haven%203D%20Screensaver%204K%2060%20FPS&redirect_counter=1&rm=sn-q0cel7z&req_id=3992e8265fc0a3ee&cms_redirect=yes&ipbypass=yes&mh=Zt&mip=92.127.64.112&mm=31&mn=sn-4g5edndz&ms=au&mt=1712799900&mv=m&mvi=3&pl=19&lsparams=ipbypass,mh,mip,mm,mn,ms,mv,mvi,pl&lsig=ALClDIEwRQIhAN56iPK3tyxVAQQVXwBEv4Y_v1DZnnp5R-y06c2DDCVKAiBnDh8bV9BW3kBeTqSDPyfeGbncEWW0MeWP_YgI8Ysfyw%3D%3D';
         }
 
         _createClass(Cub, [{
