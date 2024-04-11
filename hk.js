@@ -5,11 +5,6 @@ function listenDestroy() {
 	Lampa.Player.listener.remove('destroy', listenDestroy);	
 };
 
-function foca(){
-	Lampa.PlayerPanel.toggle();
-	clearInterval(aye);
-}
-
 function startHotkeys() {
 	document.addEventListener("keydown", listenHotkeys);
 	Lampa.Player.listener.follow('destroy', listenDestroy);
@@ -17,9 +12,6 @@ function startHotkeys() {
 
 function listenHotkeys(e) {
 
-	if (document.querySelector(".player--panel-visible")) {
-		aye = setInterval(foca, 2500);
-	}
   if (e.keyCode === 406) {
   Lampa.PlayerVideo.rewind(true,80);
   }
