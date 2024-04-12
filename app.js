@@ -6618,7 +6618,7 @@
                     else _visible(true);
                 },
                 visible: function visible() {
-                    if (condition.visible) _visible(false);
+                    if (condition.visible) _visible(true);
                     else this.dispath('rewind');
                 },
                 rewind: function rewind() {
