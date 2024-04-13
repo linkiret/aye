@@ -11328,7 +11328,7 @@
       _classCallCheck(this, Cub);
 
       this.params = params;
-      this["default"] = Utils$2.protocol() + object$2.cub_domain + '/img/background/default.mp4';
+      this["default"] = Utils$2.protocol() + 'https://bro-bg-store.s3.yandex.net/c2feee87-fc28-42e2-9abc-95bccdd93744.mp4';
     }
 
     _createClass(Cub, [{
